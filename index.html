@@ -1,9 +1,139 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Example</title>
-    </head>
-    <body>
-        <p>Hello World</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Holbrook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/BH.png" class="logo">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Ben</span> Holbrook</h1>
+        </div>
+    </div>
+</div>
+<!-- -------------------about------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi porro corporis
+                recusandae, quas sed aut, dolorum repellendus et veritatis, ea sint assumenda cupiditate
+                quos? Nulla maxime est accusantium mollitia minus.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python, C, Java</li>
+                        <li><span>Databases</span><br>SQL, SQLite</li>
+                        <li><span>Web Development</span><br>HTML, CSS, Javascript</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>September 2024 - Current</span><br>Technical Account Managment Coop @ Pepper</li>
+                        <li><span>April 2024 - August 2024</span><br>Retail Helpline Analyst @ Home Hardware</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor of Computing, Software Engineering (Co-op)</span><br>2022 - Present</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------work-terms------------------- -->
+<div id="work-terms">
+    <div class="container">
+        <h1 class="sub-title">Co-op Work Terms</h1>
+        <div class="work-terms-list">
+            <div>
+                <h2>Retail Helpline Analyst</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, fugiat deleniti illo rerum nemo accusantium at,
+                    dolorum et similique praesentium id incidunt adipisci ad esse reiciendis voluptatem, voluptas dolores ut.</p>
+                <a href="#">Work Term Report</a>
+            </div>
+            <div>
+                <h2>Technical Account Management Co-op</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, fugiat deleniti illo rerum nemo accusantium at,
+                    dolorum et similique praesentium id incidunt adipisci ad esse reiciendis voluptatem, voluptas dolores ut.</p>
+                <a href="#">Work Term Report</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------potfolio------------------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+            <div class="work">
+                <img src="images/project-2.jpg">
+                <div class="layer">
+                    <h3>Chess Engine</h3>
+                    <p>I made a chess engine, that is pretty cool. Play against it now and try to win!</p>
+                    <a href="#"><img src="images/link.webp"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project-2.jpg">
+                <div class="layer">
+                    <h3>This Website</h3>
+                    <p>I made a chess engine, that is pretty cool. Play against it now and try to win!</p>
+                    <a href="#"><img src="images/link.webp"></a>
+                </div>
+            </div>
+        </div>
+ </div>
+
+    
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+</body>
 </html>
+
+
+
+
+<!-- How to make a portfolio website using HTML CSS JS | Complete Responsive Website Design --> 1:04
