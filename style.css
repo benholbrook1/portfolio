@@ -13,7 +13,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    /* background-image: url(images/background.png); */
+    /* background-image: url(images/background.avif);  */
     background-size: cover;
     background-position: center;
 }
@@ -293,7 +293,7 @@ nav ul li a:hover::after{
 /* -------------------- contact ----------------------- */
 
 .contacts{
-    padding-top: 15px;
+    padding-top: 70px;
 }
 
 .contact-block{
@@ -303,6 +303,13 @@ nav ul li a:hover::after{
 }
 
 .contact-block img{
+    filter: invert(36%) sepia(88%) saturate(2534%) hue-rotate(190deg) brightness(103%) contrast(108%);
+    height: 30px;
+    display: inline;
+    padding-right: 20px;
+}
+
+.social-icons a img{
     filter: invert(36%) sepia(88%) saturate(2534%) hue-rotate(190deg) brightness(103%) contrast(108%);
     height: 30px;
     display: inline;
