@@ -196,6 +196,10 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
+.work-terms-list p{
+    line-height: 1.5;
+}
+
 
 /* ---------------portfolio--------------- */
 
